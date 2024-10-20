@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Number Guessing Game</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <h1>The Guessing Game</h1>
+    <div class="container">
+    <div class="box">
+        
+        <p>Guess a number between 1 and 100:</p>
+        <input type="text" id="guessInput">
+        <button id="guessButton">Guess</button>
+        <p id="message"></p>
+        
+    </div>
+    </div>
+<style>
+    h1{
+        text-align: center;
+        text-shadow: 3px black;
+    }
+    body{
+       background-color: rgb(243, 243, 243);
+       background-image: url('s.png');
+    }
+    label{
+        margin: 400px;
+    }
+    .container {
+       display: flex;
+       justify-content: center; 
+       align-items: center; 
+       height: 100vh; 
+    }
+    .box {
+        width: 400px;
+        height: 200px;
+        font-size: 24px;
+        border-radius: 20px;
+        box-shadow: 0 2px 4px rgba(245, 53, 0, 0.2);
+        margin-right: 400px;
+        margin-left: 400px;
+        text-align: center;
+    }
+    #guessButton{
+        padding: 10px;
+        border-radius: 4px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    #guessInput{
+        font-size: 20px;
+    }
+    #guessInput:hover{
+        background-image: linear-gradient(red, orange);
+    }
+
+
+</style>
+    <script src="/js/game.js">
+    </script>
+</body>
+</html>
